@@ -1,7 +1,6 @@
 var http = require('http');
 var fs = require('fs');
 
-
 var server = http.createServer(function (req, res){
     console.log('request was made: ' + req.url);
     res.writeHead(200, {'content-Type': 'text/plain'}); //to load html page, change to 'text/html'

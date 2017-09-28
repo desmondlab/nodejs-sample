@@ -6,5 +6,5 @@ var server = http.createServer(function (req, res){
     res.end('response data back'); // response body
 });
 
-server.listen(3000, '127.0.0.1'); // request ip address and port
+server.listen(3000, '127.0.0.1'); // request ip address and port  
 console.log('now listening to port 3000.....');

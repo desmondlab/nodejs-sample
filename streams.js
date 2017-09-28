@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var server = http.createServer(function (req, res){
     console.log('request was made: ' + req.url);
-    res.writeHead(200, {'content-Type': 'text/plain'}); 
+    res.writeHead(200, {'content-Type': 'text/plain'}); //to load html page, change to 'text/html'
     var myReadStream = fs.createReadStream(__dirname + '/readMe_1.txt', 'utf8'); 
     //res is writable stream
     //piping readable stream to writable stream

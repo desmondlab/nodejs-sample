@@ -1,0 +1,26 @@
+{
+  "name": "demo-1",
+  "version": "1.0.0",
+  "description": "test for node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desmondlab/nodejs-sample.git"
+  },
+  "keywords": [
+    "test",
+    "node.js"
+  ],
+  "author": "desmond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desmondlab/nodejs-sample/issues"
+  },
+  "homepage": "https://github.com/desmondlab/nodejs-sample#readme",
+  "dependencies": {
+    "express": "^4.16.0"
+  }
+}

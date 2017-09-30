@@ -1,0 +1,13 @@
+<%# to comment in ejs file use "#" or "/* */" %>
+<%# output data with equal sign %>
+Name: <%= person %>
+<br/>
+Age: <%= data.age %>
+<br/>
+Job: <%= data.job %>
+<br/>
+
+<%# output javascript without equal sign %>
+<% data.hobbies.forEach(function(item){ %>
+    <li><%= item %></li>
+<% }); %>

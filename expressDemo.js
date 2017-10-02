@@ -38,12 +38,6 @@ app.post('/form', urlencodedParser, function(req, res){
    res.render('form-success', {data: req.body}); 
 });
 
-/*
-app.get('/test', function(req, res){
-   res.render('form'); 
-});
-*/
-
 /* normal usage without using ejs */
 /*
 app.get('/', function(req, res){

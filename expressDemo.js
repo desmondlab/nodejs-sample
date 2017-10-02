@@ -16,6 +16,12 @@ app.get('/profile/:name', function(req, res){
     res.render('profile', {person: req.params.name, data: data}); 
 });
 
+app.get('/contact', function(req, res){
+    // query strings, e.g. ?name=aaaa&num=1111
+    res.render('contact', {qs: req.query}); 
+});
+
+
 
 /* normal usage without using ejs */
 /*

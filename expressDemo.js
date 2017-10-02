@@ -1,6 +1,11 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 
 var app = express();
+
+// create application/x-www-form-urlencoded parser
+// use urlencodedParser in post request
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // let express use with ejs
 app.set('view engine', 'ejs');
@@ -21,7 +26,23 @@ app.get('/contact', function(req, res){
     res.render('contact', {qs: req.query}); 
 });
 
+// for "/form" routing with post request, app.get path must be set 
+app.get('/form', function(req, res){
+    res.render('form'); 
+});
 
+// post method need to use with get method (above code), otherwise it will show "cannot get /form"
+// POST /form gets urlencoded bodies using body-parser
+app.post('/form', urlencodedParser, function(req, res){
+   console.log(req.body);
+   res.render('form-success', {data: req.body}); 
+});
+
+/*
+app.get('/test', function(req, res){
+   res.render('form'); 
+});
+*/
 
 /* normal usage without using ejs */
 /*

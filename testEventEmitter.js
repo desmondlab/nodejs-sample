@@ -25,6 +25,6 @@ people.forEach(function(person){
     });
 });
 
-// to trigger an event
+// to trigger events
 james.emit('speak', 'hey !!!!');
 ryu.emit('speak', 'what\'s up');

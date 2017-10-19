@@ -8,6 +8,7 @@ var adder = function(a,b){
 
 var pi = 3.142;
 
+// exporting a module
 module.exports = {
     counter : counter,
     adder : adder,

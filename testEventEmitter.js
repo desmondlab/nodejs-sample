@@ -7,6 +7,7 @@ var Person = function(name){
 };
 
 //use EventEmitter to create custom events and react the events when they are emitted
+//Person inherits emitter
 //Usage of util.inherits() is discouraged. Please use the ES6 class and extends keywords to get language level inheritance support. 
 util.inherits(Person, events.EventEmitter);
 
